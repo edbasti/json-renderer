@@ -79,12 +79,6 @@ const dataMen = data.data.filter(item => item.category === 'men');
 const dataWomen = data.data.filter(item => item.category === 'women');
 const dataYouth = data.data.filter(item => item.category === 'youth');
 
-console.log({
-  "men": dataMen,
-  "women": dataWomen,
-  "youth": dataYouth,
-})
-
 const totalMen = dataMen.reduce(function(_this, val) {
   return _this + parseInt(val.count)
 }, 0);
@@ -94,12 +88,6 @@ const totalWomen = dataWomen.reduce(function(_this, val) {
 const totalYouth = dataYouth.reduce(function(_this, val) {
   return _this + parseInt(val.count)
 }, 0);
-
-console.log({
-  "men": totalMen,
-  "women": totalWomen,
-  "youth": totalYouth,
-})
 
 const container = document.getElementById('container');
 
